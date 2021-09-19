@@ -12,7 +12,7 @@ stages:
         - Build Step
   - Second Build Stage:
       jobs:
-        - Build Step
+        - Build1 Step
         - Test Step
 
 Build Step:
@@ -20,6 +20,11 @@ Build Step:
     - script:
         - echo 'Hello world'
         - docker ps -a
+Build1 Step:
+  tasks:
+    - script:
+        - echo 'Hello my world'
+        - docker ps        
 Test Step:
   tasks:
     - script:
