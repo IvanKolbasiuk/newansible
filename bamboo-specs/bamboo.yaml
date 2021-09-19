@@ -1,0 +1,16 @@
+---
+version: 2
+plan:
+  project-key: MYPRJ
+  name: First RUN
+  key: RUN1
+
+stages:
+  - First Build Stage:
+      jobs: 
+        - Build Step
+
+Build Step:
+  tasks:
+    - script:
+        - echo 'Hello world'
