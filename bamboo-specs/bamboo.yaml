@@ -4,7 +4,8 @@ plan:
   project-key: MYPRJ
   name: First RUN
   key: RUN1
-
+triggers:
+  - polling: 3
 stages:
   - First Build Stage:
       jobs: 
