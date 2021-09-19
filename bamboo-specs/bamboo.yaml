@@ -9,9 +9,18 @@ stages:
   - First Build Stage:
       jobs: 
         - Build Step
+  - Second Build Stage:
+      jobs:
+        - Build Step
+        - Test Step
 
 Build Step:
   tasks:
     - script:
         - echo 'Hello world'
         - docker ps -a
+Test Step:
+  tasks:
+    - script:
+        - echo 'Hello world'
+        - docker images        
