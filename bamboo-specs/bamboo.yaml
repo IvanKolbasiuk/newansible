@@ -17,6 +17,7 @@ stages:
 
 Build Step:
   tasks:
+    - clean
     - script:
         - echo 'Hello world'
         - docker ps -a
