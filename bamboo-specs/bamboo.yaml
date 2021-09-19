@@ -19,12 +19,12 @@ Build Step:
   tasks:
     - clean
     - script:
-        - echo 'Hello world'
+        - echo 'Hello llfffff world'
         - docker ps -a
 Build1 Step:
   tasks:
     - script:
-        - echo 'Hello my world'
+        - echo 'Hello my ddkfkk world'
         - docker ps        
 Test Step:
   tasks:
