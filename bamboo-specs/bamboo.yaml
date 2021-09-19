@@ -28,5 +28,6 @@ Build1 Step:
 Test Step:
   tasks:
     - script:
-        - echo 'Hello world'
-        - ls -la    
+        - echo 'Hello world test'
+        - ls -la
+        - echo "Test test"
