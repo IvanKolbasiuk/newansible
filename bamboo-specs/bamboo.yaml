@@ -23,11 +23,13 @@ Build Step:
         - docker ps -a
 Build1 Step:
   tasks:
+    - clean
     - script:
         - echo 'Hello my ddkfkk world'
         - docker ps        
 Test Step:
   tasks:
+    - clean
     - script:
         - echo 'Hello world test'
         - ls -la
