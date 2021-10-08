@@ -19,7 +19,7 @@ Build Step:
   tasks:
     - clean
     - script:
-        - echo 'Hello llfffff world'
+        - echo 'Hello ${bamboo.buildNumber}'
         - docker ps -a
 Build1 Step:
   tasks:
